@@ -1,4 +1,4 @@
-# CURRENCY CONVERTER APPLICATION
+# CURRENCY CONVERTER WEB APPLICATION
 
 ## Goals 
 - Create a `mini` currency conversion calculator using real-time data<br>
@@ -7,17 +7,14 @@
 - Comply with the Moringa School's academic requirements 
 
 ## Project Description 
-For this project, I am required to develop an online web app where users can check real-time currency conversion rates using different currencies. I will be using the fetch function to source data from a `public` API server. This is a single-page project. 
+For this project, I am required to develop an online web app where users can check real-time currency conversion rates using different denominations. I will be using the fetch function to source data from a `public` API server. This is a single-page project. 
 ## Project Set-Up
 ### Prerequisites
 * node v14.17.4 and above, HTML, CSS, JavaScript 
 ### Deliverables 
 There are `three` key deliverables namely MVPs, API Server, and User Features as described below: 
 #### MVP (Most Viable Product)
-Input field from which the amount and currency is being converted<br> 
-Input field to which the amount and currency is being converted<br>
-Calculate button for executing the conversion process 
-Swap button
+Input field from which the amount and currency is being converted. Input field to which the amount and currency is being converted. Calculate button for executing the conversion process. Swap button
 
 #### API Server 
 
