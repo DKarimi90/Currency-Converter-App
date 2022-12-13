@@ -19,11 +19,16 @@ body{
 }
 
 h1 {
-    color: var(--primary-color)
+    color: var(--primary-color); 
+    font-family: Allison; 
+    font-size: 80px; 
 }
 
 p {
     text-align: center; 
+   font-family: times; 
+   font-weight: bold; 
+
 }
 
 .btn {
@@ -37,7 +42,8 @@ p {
 }
 
 .money-img {
-    width: 150px; 
+    width: 200px; 
+    border-radius: 80px; 
 
 }
 .currency {
