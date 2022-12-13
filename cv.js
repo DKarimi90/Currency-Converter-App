@@ -18,6 +18,10 @@ function calculate() {
     const currencyOne = currencyElementOne.value;
     const currencyTWO = currencyElementTwo.value;
 
+    fetch(`https://v6.exchangerate-api.com/v6/8d089b379c00953bf716e84a/latest/${currencyOne}`)
+    .then(response => response.json())
+    .then(data => console.log(data))
+
 }
 calculate(); 
 
