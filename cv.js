@@ -16,14 +16,32 @@ amountElementTwo.addEventListener("input", calculate);
 
 function calculate() {
     const currencyOne = currencyElementOne.value;
-    const currencyTWO = currencyElementTwo.value;
+    const currencyTwo = currencyElementTwo.value;
 
     fetch(`https://v6.exchangerate-api.com/v6/8d089b379c00953bf716e84a/latest/${currencyOne}`)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+        const rate = data.conversion_rates[currencyTwo]; 
+        rateElement.innerHTML = `1 ${currencyOne} = ${rate} ${currencyTwo}`
+
+        amountElementTwo.value = (amountElementOne.value * rate).toFixed(2); 
+    })
 
 }
 calculate(); 
+
+// added event listener to the switch button so it swap the currencies 
+switchButton.addEventListener("click", swap)
+function swap() {
+    const temp = currencyElementOne.value; 
+    currencyElementOne.value = currencyElementTwo.value; 
+    currencyElementTwo.value = temp; 
+    calculate()
+}
+swap(); 
+let paragraph = document.querySelector("P")
+paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
+
 
 
 
