@@ -22,8 +22,8 @@ body{
 
 h1 {
     color: var(--primary-color);  
-    font-family: Allison; 
-    font-size: 80px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 40px; 
 }
 
 p {
@@ -99,4 +99,18 @@ select:focus,input:focus,button:focus {
     .currency input {
         width: 200px; 
     }
+}
+.authentication {
+    font-family: times; 
+}
+#Uname {
+    border-radius: 20px; 
+    background-color: var(--secondary-color);
+    text-align: center; 
+    
+}
+#pwd {
+    border-radius: 20px; 
+    background-color: var(--secondary-color); 
+    text-align: center; 
 }
