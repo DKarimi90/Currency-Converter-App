@@ -66,6 +66,7 @@ p {
     background-position: right 10px top 50%, 0, 0; 
     background-size: 1px auto, 100%; 
     background-repeat: no-repeat; 
+    cursor: pointer; 
 }
 
 .currency input {
