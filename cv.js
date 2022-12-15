@@ -49,8 +49,7 @@ paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
 
 // adding event listener to submit button 
 submitButton.addEventListener("click", process)
-function process(e) {
-    e.preventDefault(); 
+function process() { 
     return alert("Details Submitted")
 
 }
