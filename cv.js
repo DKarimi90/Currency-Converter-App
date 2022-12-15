@@ -5,7 +5,6 @@ const amountElementOne = document.getElementById("amount-one");
 const amountElementTwo = document.getElementById("amount-two"); 
 
 const rateElement = document.getElementById("rate"); 
-const switchButton = document.getElementById("switch"); 
 const submitButton = document.getElementById("sub")
 const element = document.createElement("h4"); 
 
@@ -46,15 +45,6 @@ function calculate() {
 }
 calculate(); 
 
-
-// switchButton.addEventListener("click", swap)
-// function swap() {
-//     const temp = currencyElementOne.value; 
-//     currencyElementOne.value = currencyElementTwo.value; 
-//     currencyElementTwo.value = temp; 
-//     calculate()
-// }
-// swap(); 
 // changing inner text using DOM manipulation 
 let paragraph = document.querySelector("P")
 paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
