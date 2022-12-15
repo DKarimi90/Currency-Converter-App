@@ -22,7 +22,7 @@ function calculate() {
     const currencyOne = currencyElementOne.value;
     const currencyTwo = currencyElementTwo.value;
 
-    fetch(`https://v6.exchangerate-api.com/v6/8d089b379c00953bf716e84a/latest/${currencyOne}`)
+    fetch(` https://v6.exchangerate-api.com/v6/95020825a11a9f0fabc36e21/latest/${currencyOne}`)
     .then(response => response.json())
     .then(data => {
         const rate = data.conversion_rates[currencyTwo]; 
