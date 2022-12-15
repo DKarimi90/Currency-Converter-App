@@ -5,7 +5,7 @@ const amountElementOne = document.getElementById("amount-one");
 const amountElementTwo = document.getElementById("amount-two"); 
 
 const rateElement = document.getElementById("rate"); 
-const submitButton = document.getElementById("sub")
+// const submitButton = document.getElementById("sub")
 const element = document.createElement("h4"); 
 
 
@@ -50,20 +50,55 @@ let paragraph = document.querySelector("P")
 paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
 
 // adding event listener to submit button 
-submitButton.addEventListener("click", process)
-function process() { 
-    return alert("Details Submitted")
+// submitButton.addEventListener("click", process)
+// function process() { 
+//     return alert("Details Submitted")
 
-}
-process(); 
+// }
+// process(); 
+
 
 // adding and appending element through DOM manipulation 
 document.body.appendChild(element); 
-element.innerHTML = "Login to enjoy the service"
+element.innerHTML = "Login to use service"
 element.style.cssText = "font-family: times; text-align: center; font-weight: bold"; 
 const target = document.getElementById("contain"); 
 element.style.color = "#023e8a"
 document.body.insertBefore(element, target); 
+
+
+
+
+
+//adding user authentication 
+const username = document.getElementById("Uname").value; 
+const password = document.getElementById("pwd").value; 
+
+
+// adding conditional statements 
+function users() {
+    fetch("./users.json")
+    .then(res => res.json())
+    .then(data => {
+        for(const i = 0; i<users.length; i++){
+
+            // if(username === "users.UserName" && password === "users.Password") {
+            //     alert("Details Submitted")
+            // }
+            // else {
+            //     alert("Declined")
+            // }
+        }
+        
+    }
+    // console.log(data)
+    )}
+users(); 
+
+
+
+
+
 
 
 

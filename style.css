@@ -34,10 +34,8 @@ p {
 
 }
 
-.btn {
-    color: var(--alternative-color); 
-    background-color: var(--primary-color); 
-    cursor: pointer; 
+.current {
+    background-color: var(--secondary-color);  
     border-radius: 5px; 
     font-size: 12px; 
     padding: 5px 12px; 
