@@ -1,4 +1,4 @@
-// Defining different variables to use in this project 
+// Defining different variables to use in this project
 const currencyElementOne = document.getElementById("currency-one"); 
 const currencyElementTwo = document.getElementById("currency-two"); 
 const amountElementOne = document.getElementById("amount-one"); 
@@ -11,6 +11,7 @@ const element = document.createElement("h4");
 
 
 // Adding event listeners to various variables 
+
 currencyElementOne.addEventListener("change", calculate); 
 currencyElementTwo.addEventListener("change", calculate); 
 amountElementOne.addEventListener("input", calculate); 
@@ -45,15 +46,15 @@ function calculate() {
 }
 calculate(); 
 
-// added event listener to the switch button so it swap the currencies 
-switchButton.addEventListener("click", swap)
-function swap() {
-    const temp = currencyElementOne.value; 
-    currencyElementOne.value = currencyElementTwo.value; 
-    currencyElementTwo.value = temp; 
-    calculate()
-}
-swap(); 
+
+// switchButton.addEventListener("click", swap)
+// function swap() {
+//     const temp = currencyElementOne.value; 
+//     currencyElementOne.value = currencyElementTwo.value; 
+//     currencyElementTwo.value = temp; 
+//     calculate()
+// }
+// swap(); 
 // changing inner text using DOM manipulation 
 let paragraph = document.querySelector("P")
 paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
@@ -73,6 +74,7 @@ element.style.cssText = "font-family: times; text-align: center; font-weight: bo
 const target = document.getElementById("contain"); 
 element.style.color = "#023e8a"
 document.body.insertBefore(element, target); 
+
 
 
 
