@@ -22,15 +22,26 @@ function calculate() {
     const currencyOne = currencyElementOne.value;
     const currencyTwo = currencyElementTwo.value;
 
-    fetch(` https://v6.exchangerate-api.com/v6/95020825a11a9f0fabc36e21/latest/${currencyOne}`)
-    .then(response => response.json())
-    .then(data => {
-        const rate = data.conversion_rates[currencyTwo]; 
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'de6f4565c7msh0a7195f6b84f392p183b8ajsne33bd4164064',
+            'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://exchangerate-api.p.rapidapi.com/rapid/latest/KES', options)
+        .then(response => response.json())
+        .then(data => 
+            {
+            const rate = data.rates[currencyTwo]; 
         rateElement.innerHTML = `1 ${currencyOne} = ${rate} ${currencyTwo}`
 
         amountElementTwo.value = (amountElementOne.value * rate).toFixed(2); 
-    })
-
+        }
+        // console.log(data)
+)
+        
 }
 calculate(); 
 
