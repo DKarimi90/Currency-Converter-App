@@ -14,7 +14,7 @@ For this project, I am required to develop an online web app where users can che
 ### Deliverables 
 There are `three` key deliverables namely MVPs, API Server, and User Features as described below: 
 #### MVP (Most Viable Product)
-The app includes an input field from which the amount and currency is being converted. There is also an input field to which the amount and currency is being converted. A Switch button to help interchange the first and second currency. I have included a `calculate` function within the `.js` file to execute computations in the background and display converted figures as expected. Input is only in `numbers` as opposed to `string`
+The app includes an input field from which the amount and currency is being converted. There is also an input field to which the amount and currency is being converted. A Switch button to help interchange the first and second currency. I have included a `calculate` function within the `.js` file to execute computations in the background and display converted figures as expected. Input is only in `numbers` as opposed to `string`. There is also a `dummy` user authentication login form. 
 
 #### API Server 
 Public API url is retrieved from `https://v6.exchangerate-api.com/v6/8d089b379c00953bf716e84a/latest/USD`
@@ -38,7 +38,7 @@ Status:
     maintained, and is currently in development
 
 Version:
-    v0.1.0
+    v0.1.0 
 
 Node Version:
     14.17.4 and above
