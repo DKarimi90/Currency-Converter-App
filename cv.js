@@ -49,15 +49,6 @@ calculate();
 let paragraph = document.querySelector("P")
 paragraph.innerHTML = "Choose Amount and Currency to Get Total Exchanged Amount"
 
-// adding event listener to submit button 
-// submitButton.addEventListener("click", process)
-// function process() { 
-//     return alert("Details Submitted")
-
-// }
-// process(); 
-
-
 // adding and appending element through DOM manipulation 
 document.body.appendChild(element); 
 element.innerHTML = "Login to use service"
@@ -67,42 +58,24 @@ element.style.color = "#023e8a"
 document.body.insertBefore(element, target); 
 
 
-
-
-
-//adding user authentication 
-const username = document.getElementById("Uname").value; 
-const password = document.getElementById("pwd").value; 
-
-
-// adding conditional statements 
-// function users() {
-//     fetch("./users.json")
-//     .then(res => res.json())
-//     .then(data => {
-//         const array = data.users 
-//         array.forEach(function(users){
-//             if(username === `${users.UserName}`&& password === `${users.Password}`) {
-//                 // alert("Details Submitted")
-//                 console.log(username)
-//             }
-//             else {
-//                 alert("Declined")
-//             }
-        
-//         }
-//         )
-//         {    
-//         }
-        
-//     }
-//     )}
-// users(); 
-
-
-
-
-
+// adding user authentication 
+function getInfo() {
+    const username = document.getElementById("Uname").value; 
+    const password = document.getElementById("pwd").value; 
+    fetch("./db.json")
+    .then(res => res.json())
+    .then(data => {
+        const arr = data.users
+        for (i = 0; i<arr.length; i+=1) {
+            if(username === arr[i].UserName && password === arr[i].Password) {
+                alert("Successfully logged in!")
+                return
+            }
+        }
+        alert("Invalid Username or Password!")
+    })
+}
+getInfo(); 
 
 
 
