@@ -49,15 +49,6 @@ calculate();
 let paragraph = document.querySelector("P")
 paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
 
-// adding event listener to submit button 
-// submitButton.addEventListener("click", process)
-// function process() { 
-//     return alert("Details Submitted")
-
-// }
-// process(); 
-
-
 // adding and appending element through DOM manipulation 
 document.body.appendChild(element); 
 element.innerHTML = "Login to use service"
@@ -91,7 +82,6 @@ function users() {
         }
         
     }
-    // console.log(data)
     )}
 users(); 
 
