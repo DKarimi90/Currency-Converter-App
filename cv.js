@@ -47,7 +47,16 @@ calculate();
 
 // changing inner text using DOM manipulation 
 let paragraph = document.querySelector("P")
-paragraph.innerHTML = "Choose Currency and Amount to Get Exchange Rates"
+paragraph.innerHTML = "Choose Amount and Currency to Get Total Exchanged Amount"
+
+// adding event listener to submit button 
+// submitButton.addEventListener("click", process)
+// function process() { 
+//     return alert("Details Submitted")
+
+// }
+// process(); 
+
 
 // adding and appending element through DOM manipulation 
 document.body.appendChild(element); 
@@ -67,23 +76,28 @@ const password = document.getElementById("pwd").value;
 
 
 // adding conditional statements 
-function users() {
-    fetch("./users.json")
-    .then(res => res.json())
-    .then(data => {
-        for(const i = 0; i<users.length; i++){
-
-            // if(username === "users.UserName" && password === "users.Password") {
-            //     alert("Details Submitted")
-            // }
-            // else {
-            //     alert("Declined")
-            // }
-        }
+// function users() {
+//     fetch("./users.json")
+//     .then(res => res.json())
+//     .then(data => {
+//         const array = data.users 
+//         array.forEach(function(users){
+//             if(username === `${users.UserName}`&& password === `${users.Password}`) {
+//                 // alert("Details Submitted")
+//                 console.log(username)
+//             }
+//             else {
+//                 alert("Declined")
+//             }
         
-    }
-    )}
-users(); 
+//         }
+//         )
+//         {    
+//         }
+        
+//     }
+//     )}
+// users(); 
 
 
 
