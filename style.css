@@ -35,10 +35,11 @@ p {
 }
 
 .current {
-    background-color: var(--secondary-color);  
-    border-radius: 5px; 
-    font-size: 12px; 
-    padding: 5px 12px; 
+    border: 0; 
+    background: transparent; 
+    font-size: 20px; 
+    text-align: center; 
+    font-family: times; 
 
 }
 
@@ -125,5 +126,5 @@ select:focus,input:focus,button:focus {
     color: var(--alternative-color); 
     align-items: center; 
     padding: 6px; 
-    
+    cursor: pointer; 
 }
