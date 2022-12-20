@@ -24,6 +24,8 @@ For this web app, users should be able to:<br>
 Input, either in float or integer values, amount within the first field in Kenyan shillings<br>
 Automatically compute different amounts of kenyan currency relative to other `160` denominations<br>
 Check real-time currency conversion rates from any currency of interest within the above mentioned 160 denominations<br>
+## Running the Program 
+Fork and Clone the repo to your computer/laptop. Open the terminal (ctrl + alt + T) for Ubuntu OS. Navigate to the cloned repo and using Visual Studio (VS) code open the project using the command "code ." Then use live server to launch the app on the World Wide Web. The command line may be different for alternative Operating Systems (OS) and Integrated Development Environments (IDEs). It is advisable you use either Chrome or Mozilla firefox.  
 
 
 ```
