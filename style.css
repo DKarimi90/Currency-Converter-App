@@ -101,30 +101,82 @@ select:focus,input:focus,button:focus {
     }
 }
 .authentication {
-    font-family: times; 
-}
-#Uname {
+    width:  250px; 
+    height: 330px; 
+    color: var(--primary-color); 
+    background: transparent; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     border-radius: 20px; 
-    background-color: var(--secondary-color);
-    text-align: center; 
-    padding: 5px; 
-    border: 2px solid var(--alternative-color); 
+    padding: 40px 25px; 
+    border: 1px solid var(--alternative-color); 
 }
-    
-#pwd {
-    border-radius: 20px; 
-    background-color: var(--secondary-color); 
-    text-align: center; 
-    margin-left: 20px; 
-    padding: 5px;
-    border: 2px solid var(--alternative-color); 
+.authentication label {
+    padding-bottom: 15px; 
+}
+.authentication input {
+    width: 100%; 
+    height: 35px; 
+    padding-top: 5px; 
+    margin-bottom: 30px; 
+    background: transparent; 
+    border-bottom: 1px solid var(--alternative-color); 
+    border-top: none; 
+    border-left: none; 
+    border-right: none; 
+    color: #000; 
+    outline: none; 
+    font-size: 15px; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+h2 {
+    text-align: center;
+    font-family: charm, sans-serif; 
 }
 #sub {
-    align-items: center;
-    border-radius: 10px; 
-    background-color: var(--primary-color); 
-    color: var(--alternative-color); 
-    align-items: center; 
-    padding: 6px; 
+    width: 50%; 
+    margin-left: 50px;
+    border: none; 
+    height: 30px; 
+    color: var(--primary-color); 
+    background: transparent; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 15px; 
     cursor: pointer; 
+    border: 1px solid var(--alternative-color)
+
+}
+#sub:hover {
+    background-color: transparent;
+    color: var(--primary-color); 
+    font-size: 15px; 
+    font-family: charm, sans-serif;
+     
+}
+.nav {
+    overflow: hidden; 
+    background-color: transparent; 
+}
+
+.nav a {
+    float: left; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    text-decoration: none; 
+    font-size: 15px; 
+}
+.nav a:visited {
+    color: var(--primary-color); 
+}
+.nav a:hover {
+    font-size: 20px; 
+    font-family: charm, sans-serif; 
+}
+.nav a:active {
+    color: var(--secondary-color)
 }
