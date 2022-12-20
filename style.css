@@ -113,7 +113,8 @@ select:focus,input:focus,button:focus {
     transform: translate(-50%, -50%); 
     border-radius: 20px; 
     padding: 40px 25px; 
-    border: 1px solid var(--alternative-color); 
+    border: 1px solid var(--alternative-color);
+    box-shadow: 5px 5px 4px 5px rgb(121, 117, 117);  
 }
 .authentication label {
     padding-bottom: 15px; 
