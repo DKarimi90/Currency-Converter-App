@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: var(--secondary-color); 
+    background-image: url("./images/b.jpg"); 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     display: flex; 
     flex-direction: column; 
