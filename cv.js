@@ -51,7 +51,7 @@ paragraph.innerHTML = "Choose Amount and Currency to Get Total Exchanged Amount"
 
 // adding and appending element through DOM manipulation 
 document.body.appendChild(element); 
-element.innerHTML = "Login to use service"
+element.innerHTML = "Enjoy the Service"
 element.style.cssText = "font-family: times; text-align: center; font-weight: bold"; 
 const target = document.getElementById("contain"); 
 element.style.color = "#023e8a"
