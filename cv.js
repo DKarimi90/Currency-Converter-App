@@ -69,7 +69,7 @@ function getInfo() {
         for (i = 0; i<arr.length; i+=1) {
             if(username === arr[i].UserName && password === arr[i].Password) {
                 alert("Successfully logged in!")
-                window.location.replace("index.html")
+                window.location.replace("main.html")
                 return
             }
         }
