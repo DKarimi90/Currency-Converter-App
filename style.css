@@ -167,7 +167,7 @@ h2 {
 
 .nav a {
     float: left; 
-    color: white; 
+    color: var(--alternative-color); 
     text-align: center; 
     padding: 10px; 
     text-decoration: none; 
@@ -177,8 +177,9 @@ h2 {
     color: var(--primary-color); 
 }
 .nav a:hover {
-    font-size: 20px; 
-    font-family: charm, sans-serif; 
+    color: var(--alternative-color); 
+    transition: 2s; 
+ 
 }
 .nav a:active {
     color: var(--secondary-color)
